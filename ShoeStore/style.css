@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #010615;
+}
+.mainContent {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+.box {
+  color: white;
+  transition: 1s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(30px);
+}
+.box:nth-child(1)::before,
+.box:nth-child(1)::after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+.box:nth-child(2)::before,
+.box:nth-child(2)::after {
+  background: linear-gradient(235deg, white, #010615, white);
+}
+.box:nth-child(3)::before,
+.box:nth-child(3)::after {
+  background: linear-gradient(235deg, #ff073a, #010615, #ff073a);
+}
+.box:nth-child(4)::before,
+.box:nth-child(4)::after {
+  background: linear-gradient(235deg, #fc8427, #010615, #fc8427);
+}
+.box:nth-child(5)::before,
+.box:nth-child(5)::after {
+  background: linear-gradient(235deg, #08ff08, #010615, #08ff08);
+}
+.box:nth-child(6)::before,
+.box:nth-child(6)::after {
+  background: linear-gradient(235deg, white, #010615, #ccff02);
+}
+.box:nth-child(7)::before,
+.box:nth-child(7)::after {
+  background: linear-gradient(235deg, #6600ff, #010615, #6600ff);
+}
+.box:nth-child(8)::before,
+.box:nth-child(8)::after {
+  background: linear-gradient(235deg, #04d9ff, #010615, #04d9ff);
+}
+.box:nth-child(9)::before,
+.box:nth-child(9)::after {
+  background: linear-gradient(235deg, #fe4164, #010615, #fe4164);
+}
+.box:nth-child(10)::before,
+.box:nth-child(10)::after {
+  background: linear-gradient(235deg, #00fdff, #010615, #00fdff);
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+.box:hover {
+  transform: scale(1.1);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-top: 1em;
+}
+
+.logo span {
+  color: red;
+}
+.Content {
+  text-align: left;
+  font-size: 120%;
+}
+
+.Content #picture3 {
+  position: absolute;
+  bottom: 0;
+}
+#picture1 {
+  background: url(Images/Picture0.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 20%;
+}
+#picture2 {
+  background: url(Images/Picture1.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+#picture3 {
+  background: url(Images/Picture2.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 20%;
+}
+#picture4 {
+  background: url(Images/Picture3.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+
+  background-position-x: 50%;
+  background-position-y: 20%;
+}
+#picture5 {
+  background: url(Images/Picture4.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+#picture6 {
+  background: url(Images/Picture5.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+
+  background-position-x: 50%;
+  background-position-y: 20%;
+}
+#picture7 {
+  background: url(Images/Picture6.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-position-x: 30%;
+  background-position-y: 20%;
+}
+#picture8 {
+  background: url(Images/Picture7.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+}
+#picture9 {
+  background: url(Images/Picture8.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+}
+#picture10 {
+  background: url(Images/Picture9.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+}
+
+.pow {
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+  top: 5vw;
+  transition: 2s;
+  z-index: 1;
+  background-size: 200% 200% !important;
+}
